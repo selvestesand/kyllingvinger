@@ -22,8 +22,11 @@ constructor(){
   createTodo(){
     // TodoActions.createTodo(Date.now());
     const text = document.getElementById("inputTodo").value;
-    TodoActions.createTodo(text);
-    document.getElementById("inputTodo").value = "";
+    if (text != "") {
+      TodoActions.createTodo(text);
+      document.getElementById("inputTodo").value = "";
+    }
+
   }
 
   render() {

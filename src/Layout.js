@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Todos from './pages/Todos';
+import Todos from './components/Todos';
 import './Layout.css';
 
 class App extends Component {
