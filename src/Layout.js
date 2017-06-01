@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Todos from './pages/Todos';
+import './Layout.css';
 
 class App extends Component {
   render() {
@@ -22,14 +23,8 @@ class App extends Component {
                   <ul className="nav navbar-nav">
                     <li className="active"><a href="#">ToDos <span className="sr-only">(current)</span></a></li>
                   </ul>
-                  <form className="navbar-form navbar-left" role="search">
-                    <div className="form-group">
-                      <input type="text" className="form-control" placeholder="New Todo"/>
-                    </div>
-                    <button type="submit" className="btn btn-default">Create</button>
-                  </form>
-
                 </div>
+
               </div>
             </nav>
             <Todos />

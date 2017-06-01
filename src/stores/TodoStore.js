@@ -7,12 +7,17 @@ class TodoStore extends EventEmitter {
     this.todos = [
         {
           id: 5125123123,
-          text: "Go Shopping",
+          text: "Chill out",
           complete: false
         },
         {
           id: 5128371283,
-          text: "Take out the trash",
+          text: "Do emissaries",
+          complete: true
+        },
+        {
+          id: 5125612123,
+          text: "Eat chicken wings",
           complete: false
         },
       ];
