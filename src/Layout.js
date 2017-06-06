@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Todos from './components/Todos';
+import Tiles from './components/Tiles';
 import './Layout.css';
 
-class App extends Component {
+class Layout extends Component {
   render() {
     return (
       <div>
@@ -10,27 +10,18 @@ class App extends Component {
               <div className="container-fluid">
 
                 <div className="navbar-header">
-                  <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-                    <span className="sr-only">Toggle navigation</span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                  </button>
                   <a className="navbar-brand" href="#">Kyllingvinger</a>
                 </div>
 
-                <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                  <ul className="nav navbar-nav">
-                    <li className="active"><a href="#">ToDos <span className="sr-only">(current)</span></a></li>
-                  </ul>
-                </div>
 
               </div>
             </nav>
-            <Todos />
+
+            <Tiles />
+
             </div>
     );
   }
 }
 
-export default App;
+export default Layout;
